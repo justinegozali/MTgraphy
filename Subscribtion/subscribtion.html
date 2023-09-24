@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribtion</title>
+    <link rel="stylesheet" href="subscribtion.css">
+</head>
+<script src="subscribtion.js"></script>
+<body>
+    <header>
+        <a href="/Tugas Project/Home/home.html" class="brand">MTgraphy</a>
+        <nav>
+            <ul>
+                <li><a href="/Tugas Project/Home/home.html">Home</a></li>
+                <li><a href="/Tugas Project/Gallery/gallery.html">Gallery</a></li>
+                <li><a href="/Tugas Project/AboutUs/about-us.html">About Us</a></li>
+                <li><a href="/Tugas Project/ContactUs/contact-us.html">Contact Us</a></li>       
+            </ul>
+            <a href="/Tugas Project/Subscribtion/subscribtion.html"><button>Subscribe</button></a> 
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <form action="/" onsubmit="formSubmitted(event)">
+                <h1 class="title">Register</h1>
+                <input type="text" name="" id="nameTxt" placeholder="Name" required autocomplete="none"> 
+                <input type="tel" name="" id="phonenumberTxt" placeholder="Phone Number" required>
+                <input type="email" name="" id="emailTxt" placeholder="Email" required>
+                <input type="password" name="" id="passwordTxt" placeholder="Password" required>
+                <input type="password" name="" id="confirmPasswordTxt" placeholder="Confirm Your Password" required>            
+                <div class="box">
+                    <p class="label">Select one country below</p>
+                    <div>
+                    <input type="radio" name="country" id="indonesia" required>
+                    <label class="label" for="indonesia">Indonesia</label>                        
+                    </div>
+                    <div>
+                    <input type="radio" name="country" id="malaysia">
+                    <label class="label" for="malaysia">Malaysia</label>                        
+                    </div>
+                    <div>
+                    <input type="radio" name="country" id="singapore">
+                    <label class="label" for="singapore">Singapore</label>                        
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="checkBox" required>
+                    <label class="label" for="checkBox">Agree to the term & condition</label>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/Tugas Project/Home/home.html">Home</a></li>
+                <li><a href="/Tugas Project/Gallery/gallery.html">Gallery</a></li>
+                <li><a href="/Tugas Project/AboutUs/about-us.html">About Us</a></li>
+                <li><a href="/Tugas Project/ContactUs/contact-us.html">Contact Us</a></li>      
+            </ul>
+            <div class="social">
+                <a href="#">
+                  <img src="/Tugas Project/source/logo/twitter.png" alt="twitter icon" class="icon">
+                </a>
+                <a href="#">
+                    <img src="/Tugas Project/source/logo/facebook.png" alt="facebook icon" class="icon">
+                </a>
+                <a href="#">
+                    <img src="/Tugas Project/source/logo/instagram.png" alt="instagram icon" class="icon">   
+                </a>
+            </div>
+        </nav>        
+        <p class="copyright">Copyright ©2022 All rights reserved</p>
+    </footer>
+</body>
+</html>

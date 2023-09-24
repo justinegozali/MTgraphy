@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;    
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #352961;
+}
+
+header{
+    background-color: #774181;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+header .brand{
+    color: #F6E5E5;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li{
+    display: inline-block;
+    list-style: none;    
+}
+
+header nav ul li a{
+    color: #F6E5E5;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px 10px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+header nav ul li a:hover{
+    color: #E6B2C6;
+}
+
+header nav button{
+    color: #774181;
+    background-color: #F6E5E5;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header nav button:hover{
+    background-color:#E6B2C6;
+}
+
+.banner{
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background-image: url(/Tugas\ Project/source/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.banner-text{
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 10%;
+}
+
+.banner h1{
+    color: #F6E5E5;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 5vh;
+    text-align: center;
+    text-shadow: 2px 2px 8px #774181;
+
+} 
+
+.banner h2{
+    color: #F6E5E5;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 5vh;
+    text-align: center;
+    text-shadow: 2px 2px 8px #774181;
+}
+
+.banner button{
+    color: #774181;
+    background-color: #F6E5E5;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 200px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;    
+}
+
+.banner button:hover{
+    background-color:#E6B2C6;
+}
+
+footer{
+    background-color: #352961;    
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+footer nav {
+    background-color: #774181;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0px 10px;
+}
+
+footer nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+footer nav ul li a{
+    color: #F6E5E5;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px 10px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+footer nav ul li a:hover{
+    color: #E6B2C6;
+}
+
+footer nav div{
+    display: flex;
+    align-content: center;
+}
+
+footer nav div a{
+    text-decoration: none;
+    padding: 0px 5px;
+    padding-top: 5px;
+    margin: 0px 5px;
+    border-radius: 8px;
+    transition: all 0.3s ease 0s;
+}
+
+footer nav div a:hover{
+    background-color: #E6B2C6;
+}
+
+footer nav div .icon{
+    width: 30px;
+    text-decoration: none;
+}
+
+footer .copyright{
+    color: #F6E5E5;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+    text-align: center;    
+}
+
+@media only screen and (max-width: 800px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .brand{
+        font-size: 28px;
+        padding-bottom: 5px;
+    }
+
+    header nav ul li a{
+        font-size: 12px;
+        padding: 0px 5px;
+    }
+
+    header nav button{
+        font-size: 12px;
+        padding: 5px 10px;
+        margin: 0px 5px;
+    }
+
+    .banner button{
+        padding: 10px 80px;
+    }
+
+    footer{
+        height: 120px;
+    }
+
+    footer nav{
+        height: 100px;
+    }
+
+    footer nav ul li{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer nav ul li a{
+        padding: 2px 10px;
+        font-size: 12px;
+    }
+
+    footer nav div{
+        flex-direction: column;
+    }
+
+    footer nav div .icon{
+        width: 15px;
+    }
+
+    footer .copyright{
+        font-size: 12px;
+    }
+}
